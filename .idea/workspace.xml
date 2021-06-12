@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dbf564b-ea2a-4af4-b5c5-835116555ddd" name="Default Changelist" comment="JM_1.1.3">
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" afterDir="false" />
-    </list>
+    <list default="true" id="0dbf564b-ea2a-4af4-b5c5-835116555ddd" name="Default Changelist" comment="JM_1.1.3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +95,7 @@
       <workItem from="1623492401980" duration="1385000" />
       <workItem from="1623493808147" duration="591000" />
       <workItem from="1623494474830" duration="680000" />
-      <workItem from="1623495191134" duration="1718000" />
+      <workItem from="1623495191134" duration="6187000" />
     </task>
     <task id="LOCAL-00001" summary="JM_1.1.3">
       <created>1623496168282</created>
@@ -106,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623496168282</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="JM_1.1.3">
+      <created>1623497065888</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623497065888</updated>
+    </task>
+    <task id="LOCAL-00003" summary="JM_1.1.3">
+      <created>1623497093099</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623497093099</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
