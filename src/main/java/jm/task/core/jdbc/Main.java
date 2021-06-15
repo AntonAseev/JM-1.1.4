@@ -1,22 +1,41 @@
 package jm.task.core.jdbc;
 
-import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
+import jm.task.core.jdbc.service.UserServiceImpl;
 
 public class Main {
     public static void main(String[] args) {
-        UserDaoJDBCImpl table = new UserDaoJDBCImpl();
-        table.createUsersTable();
 
-        table.saveUser("Anton", "Aseev", (byte) 27);
-        table.saveUser("Ivan", "Ivanov", (byte) 51);
-        table.saveUser("Petr", "Petrov", (byte) 33);
-        table.saveUser("Pavel", "Pavlov", (byte) 102);
+        UserServiceImpl userService = new UserServiceImpl();
 
-        table.getAllUsers();
+        userService.createUsersTable();
 
-        table.cleanUsersTable();
+        userService.saveUser("Anton", "Aseev", (byte) 27);
+        userService.saveUser("Ivan", "Ivanov", (byte) 5);
+        userService.saveUser("Petr", "Petrov", (byte) 13);
+        userService.saveUser("Pavel", "Pavlov", (byte) 102);
 
-        table.dropUsersTable();
+        userService.removeUserById(2);
+
+        userService.getAllUsers();
+
+        userService.cleanUsersTable();
+
+        userService.dropUsersTable();
+
+
+//        UserDaoJDBCImpl table = new UserDaoJDBCImpl();
+//        table.createUsersTable();
+//
+//        table.saveUser("Anton", "Aseev", (byte) 27);
+//        table.saveUser("Ivan", "Ivanov", (byte) 51);
+//        table.saveUser("Petr", "Petrov", (byte) 33);
+//        table.saveUser("Pavel", "Pavlov", (byte) 102);
+//
+//        table.getAllUsers();
+//
+//        table.cleanUsersTable();
+//
+//        table.dropUsersTable();
 
     }
 }

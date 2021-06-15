@@ -1,21 +1,29 @@
 package jm.task.core.jdbc.model;
 
+import javax.persistence.Entity;
+import org.hibernate.annotations.NamedQuery;
 import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Table
+@Entity
+@Table(name = "Users")
+@NamedQuery(name = "User.getAll", query = "SELECT c from User c")
 public class User {
     @Id
+    @Column(name = "Id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(name = "Name", nullable = false)
     private String name;
 
-    @Column
+    @Column(name = "Lastname", nullable = false)
     private String lastName;
 
-    @Column
+    @Column(name = "Age", nullable = false)
     private Byte age;
 
     public User() {
